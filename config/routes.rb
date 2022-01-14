@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   #API Endpoints
-  # root to 'product#index'
+  root to: 'product#index'
   get '/products', to: 'product#index'
   get '/products/:category_id', to: 'product#filter_by_category'
 end
