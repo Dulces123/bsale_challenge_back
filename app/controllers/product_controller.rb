@@ -6,4 +6,8 @@ class ProductController < ApplicationController
   def filter_by_category
     render json: Product.all.filter{|p| p.category == (params[:category_id]).to_i}
   end
+
+  def index_products_categories
+    render json: Category.all
+  end
 end

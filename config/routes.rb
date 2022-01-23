@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   root to: 'product#index'
   get '/products', to: 'product#index'
   get '/products/:category_id', to: 'product#filter_by_category'
+  get '/categories/', to: 'product#index_products_categories'
 end
